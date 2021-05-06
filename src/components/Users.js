@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 class Users extends Component {
   render() {
-    return (
+    return(
       <div>
-        <h2>Users</h2>
-        <p> My awesome Users component </p>
-      </div>
-    );
+    <h2> Users </h2>
+    <p>{this.props.match.params.id}</p>
+    <p> {this.props.greetingMessage}, this is my awesome Users component </p>
+  </div>
+    )
   }
-};
-
+}
 export default Users;
